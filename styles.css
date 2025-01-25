@@ -1,65 +1,65 @@
-/* Basic reset to remove default margins/padding */
+/* Basic reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Set background image to cover the entire page */
+/* Full-page background image */
 body {
   background: url("./images/fantastic-stories-logo.png") no-repeat center center fixed;
   background-size: cover;
   font-family: Arial, sans-serif;
+  min-height: 100vh;
+  color: #fff;
 }
 
-/* Position content near the top (instead of vertically centered) */
-.content {
+/* Place heading & paragraph near the top */
+.top-content {
   text-align: center;
-  color: #000000;
-  margin-top: 10vh; /* adjust as needed to move down from very top */
+  margin-top: 5vh; /* Adjust spacing from top as desired */
+}
+.top-content h1 {
+  font-size: 3rem;
+}
+.top-content p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
 
-/* Enlarge heading and paragraph text while preserving proportion */
-.content h1 {
-  font-size: 3rem;  /* bigger heading */
-}
-
-.content p {
-  font-size: 1.5rem;  /* paragraph is half the heading's size => same proportion */
-}
-
-/* Container for the button */
+/* Center the button horizontally in a section */
 .buttons {
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh; /* Adjust if you want the button higher/lower */
 }
 
-/* Button: square, background image, 2-line text in the center */
+/* Button styles: square, rounded corners, gradient overlay on background image */
 .btn {
-  display: inline-flex;                  /* lets us center text both horizontally & vertically */
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 140px;                          /* square dimensions */
+  width: 140px;
   height: 140px;
   text-decoration: none;
   color: #fff;
   font-weight: bold;
   margin: 5px;
 
-  /* Use your new image for the button background */
-  background: url("./images/LightBoxLaunchIcon.jpg") no-repeat center center;
+  /* Use your LightBox image and add a gradient overlay
+     so the text remains visible over the image. */
+  background: 
+    linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,0.5)),
+    url("./images/LightBoxLaunchIcon.jpg") no-repeat center center;
   background-size: cover;
 
-  /* Remove rounding so it's a perfect square (optional) */
-  border-radius: 0;
+  /* Rounded corners */
+  border-radius: 15px;
 }
 
-/* Simple hover effect */
+/* Slight hover effect */
 .btn:hover {
-  opacity: 0.8;
-}
-
-
-.btn:hover {
-  background-color: #0946cc;
+  opacity: 0.9;
 }
