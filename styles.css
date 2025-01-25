@@ -15,7 +15,7 @@ body {
 /* Position content near the top (instead of vertically centered) */
 .content {
   text-align: center;
-  color: #fff;
+  color: #000000;
   margin-top: 10vh; /* adjust as needed to move down from very top */
 }
 
