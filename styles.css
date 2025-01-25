@@ -12,30 +12,53 @@ body {
   font-family: Arial, sans-serif;
 }
 
-/* Center content on the page */
+/* Position content near the top (instead of vertically centered) */
 .content {
   text-align: center;
-  color: #fff; /* text color to stand out against background */
-  position: relative;
-  top: 50vh;
-  transform: translateY(-50%);
+  color: #fff;
+  margin-top: 10vh; /* adjust as needed to move down from very top */
 }
 
-/* Basic button styles */
+/* Enlarge heading and paragraph text while preserving proportion */
+.content h1 {
+  font-size: 3rem;  /* bigger heading */
+}
+
+.content p {
+  font-size: 1.5rem;  /* paragraph is half the heading's size => same proportion */
+}
+
+/* Container for the button */
 .buttons {
   margin-top: 20px;
 }
 
+/* Button: square, background image, 2-line text in the center */
 .btn {
-  display: inline-block;
-  background-color: #0b5fff;
-  color: #fff;
-  padding: 10px 20px;
+  display: inline-flex;                  /* lets us center text both horizontally & vertically */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 140px;                          /* square dimensions */
+  height: 140px;
   text-decoration: none;
-  border-radius: 5px;
-  margin: 5px;
+  color: #fff;
   font-weight: bold;
+  margin: 5px;
+
+  /* Use your new image for the button background */
+  background: url("./images/LightBoxLaunchIcon.jpg") no-repeat center center;
+  background-size: cover;
+
+  /* Remove rounding so it's a perfect square (optional) */
+  border-radius: 0;
 }
+
+/* Simple hover effect */
+.btn:hover {
+  opacity: 0.8;
+}
+
 
 .btn:hover {
   background-color: #0946cc;
