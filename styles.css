@@ -11,6 +11,7 @@ body {
   background-size: cover;
   font-family: Arial, sans-serif;
   color: #000000;
+  border-color: #E91E63;
   min-height: 100vh; /* Ensure body takes full viewport height */
 }
 
