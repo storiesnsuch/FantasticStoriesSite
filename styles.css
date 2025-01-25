@@ -1,0 +1,42 @@
+/* Basic reset to remove default margins/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set background image to cover the entire page */
+body {
+  background: url("path/to/your-background-image.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+/* Center content on the page */
+.content {
+  text-align: center;
+  color: #fff; /* text color to stand out against background */
+  position: relative;
+  top: 50vh;
+  transform: translateY(-50%);
+}
+
+/* Basic button styles */
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #0b5fff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin: 5px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #0946cc;
+}
